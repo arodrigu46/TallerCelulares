@@ -8,19 +8,20 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 
-public class Principal extends AppCompatActivity {
+public class Reportes extends AppCompatActivity {
     private ListView lv;
     private Resources resources;
     private String opc[];
-    private Intent in;
+    Intent in;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
-        lv = (ListView) findViewById(R.id.Opciones);
+        setContentView(R.layout.activity_reportes);
+        lv = (ListView) findViewById(R.id.OpcionesReportes);
         resources=this.getResources();
-        opc = resources.getStringArray(R.array.OpcionesPrincipal);
+        opc = resources.getStringArray(R.array.OpcionesReportes);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,opc);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -28,11 +29,15 @@ public class Principal extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 switch (i){
                     case 0:
-                        in = new Intent(Principal.this,Crear.class);
+                        in = new Intent(Reportes.this,Reporte1.class);
                         startActivity(in);
                         break;
                     case 1:
-                        in = new Intent(Principal.this,Reportes.class);
+                        in = new Intent(Reportes.this,Reporte2.class);
+                        startActivity(in);
+                        break;
+                    case 2:
+                        in = new Intent(Reportes.this,Reporte3.class);
                         startActivity(in);
                         break;
                 }

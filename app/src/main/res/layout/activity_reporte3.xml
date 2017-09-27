@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -8,20 +9,13 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
-        tools:context="com.example.android.tallercelulares.Principal">
+        tools:context="com.example.android.tallercelulares.Reporte3">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/titulo"
+            android:text="@string/reporte3"
             android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-    <ListView
-        android:id="@+id/Opciones"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>
+            android:textSize="20sp" />
+    </LinearLayout>

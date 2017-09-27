@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Crear" />
+        <activity android:name=".Reportes" />
+        <activity android:name=".Reporte1" />
+        <activity android:name=".Reporte2" />
+        <activity android:name=".Reporte3"></activity>
     </application>
 
 </manifest>
